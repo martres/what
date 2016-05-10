@@ -17,39 +17,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oqt-TS-s75">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="45"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdj-5o-TsD">
+                                <rect key="frame" x="0.0" y="249.5" width="600" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="kBq-Md-N4D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="60"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.88235294117647056" blue="0.80392156862745101" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Oqt-TS-s75" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="2Qh-Dt-JXb"/>
-                            <constraint firstItem="Oqt-TS-s75" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="G9g-Lb-sNS"/>
-                            <constraint firstItem="Oqt-TS-s75" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Wbf-3x-GHZ"/>
+                            <constraint firstItem="cdj-5o-TsD" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="HTs-Pi-zeK"/>
+                            <constraint firstItem="cdj-5o-TsD" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="Mrw-rR-P1a"/>
+                            <constraint firstItem="cdj-5o-TsD" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ZvV-1n-Dpy"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="Oqt-TS-s75"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="2Qh-Dt-JXb"/>
-                                <exclude reference="G9g-Lb-sNS"/>
-                                <exclude reference="Wbf-3x-GHZ"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="Oqt-TS-s75"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="2Qh-Dt-JXb"/>
-                                <include reference="G9g-Lb-sNS"/>
-                                <include reference="Wbf-3x-GHZ"/>
-                            </mask>
-                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>

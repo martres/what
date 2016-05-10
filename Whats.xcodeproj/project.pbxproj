@@ -8,13 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		6529B9D71CD885BB007D3466 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6529B9D61CD885BB007D3466 /* AppDelegate.swift */; };
-		6529B9D91CD885BB007D3466 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6529B9D81CD885BB007D3466 /* ViewController.swift */; };
 		6529B9DC1CD885BB007D3466 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6529B9DA1CD885BB007D3466 /* Main.storyboard */; };
 		6529B9DF1CD885BB007D3466 /* Whats.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6529B9DD1CD885BB007D3466 /* Whats.xcdatamodeld */; };
 		6529B9E11CD885BB007D3466 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6529B9E01CD885BB007D3466 /* Assets.xcassets */; };
 		6529B9E41CD885BB007D3466 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6529B9E21CD885BB007D3466 /* LaunchScreen.storyboard */; };
 		6529B9EF1CD885BB007D3466 /* WhatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6529B9EE1CD885BB007D3466 /* WhatsTests.swift */; };
 		6529B9FA1CD885BB007D3466 /* WhatsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6529B9F91CD885BB007D3466 /* WhatsUITests.swift */; };
+		655378A11CE12A26009D5A6B /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655378A01CE12A26009D5A6B /* MainNavigationViewController.swift */; };
+		655378A31CE12CB7009D5A6B /* AccueilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655378A21CE12CB7009D5A6B /* AccueilViewController.swift */; };
+		655378A91CE14C17009D5A6B /* small-calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 655378A81CE14C17009D5A6B /* small-calendar.png */; };
+		655378B01CE15F27009D5A6B /* ExtensionUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655378AF1CE15F27009D5A6B /* ExtensionUIButton.swift */; };
+		655378B41CE1AB34009D5A6B /* beer.png in Resources */ = {isa = PBXBuildFile; fileRef = 655378B31CE1AB34009D5A6B /* beer.png */; };
+		655378BB1CE1AB9D009D5A6B /* BASKETBALL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 655378B81CE1AB9D009D5A6B /* BASKETBALL@3x.png */; };
+		655378BF1CE1AD1B009D5A6B /* BURGER@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 655378BC1CE1AD1B009D5A6B /* BURGER@1x.png */; };
+		655378C01CE1AD1B009D5A6B /* BURGER@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 655378BD1CE1AD1B009D5A6B /* BURGER@2x.png */; };
+		655378C11CE1AD1B009D5A6B /* BURGER@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 655378BE1CE1AD1B009D5A6B /* BURGER@3x.png */; };
+		655378C31CE1BC68009D5A6B /* HEART.png in Resources */ = {isa = PBXBuildFile; fileRef = 655378C21CE1BC68009D5A6B /* HEART.png */; };
+		655378C61CE1BC72009D5A6B /* HEART@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 655378C41CE1BC72009D5A6B /* HEART@2x.png */; };
+		655378C71CE1BC72009D5A6B /* HEART@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 655378C51CE1BC72009D5A6B /* HEART@3x.png */; };
+		655378CB1CE1C16C009D5A6B /* shopping-cart.png in Resources */ = {isa = PBXBuildFile; fileRef = 655378CA1CE1C16C009D5A6B /* shopping-cart.png */; };
+		655378CD1CE1C242009D5A6B /* man-working-on-a-laptop-from-side-view.png in Resources */ = {isa = PBXBuildFile; fileRef = 655378CC1CE1C242009D5A6B /* man-working-on-a-laptop-from-side-view.png */; };
+		658BB8511CE10A0600F65DB4 /* LoginFBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658BB8501CE10A0600F65DB4 /* LoginFBViewController.swift */; };
+		B330B714FF4576A465274950 /* libPods-Whats.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A771C90A842387F9A3B7EE3C /* libPods-Whats.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +52,6 @@
 /* Begin PBXFileReference section */
 		6529B9D31CD885BA007D3466 /* Whats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6529B9D61CD885BB007D3466 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6529B9D81CD885BB007D3466 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6529B9DB1CD885BB007D3466 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6529B9DE1CD885BB007D3466 /* Whats.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Whats.xcdatamodel; sourceTree = "<group>"; };
 		6529B9E01CD885BB007D3466 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +63,25 @@
 		6529B9F51CD885BB007D3466 /* WhatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6529B9F91CD885BB007D3466 /* WhatsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsUITests.swift; sourceTree = "<group>"; };
 		6529B9FB1CD885BB007D3466 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		655378A01CE12A26009D5A6B /* MainNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
+		655378A21CE12CB7009D5A6B /* AccueilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccueilViewController.swift; sourceTree = "<group>"; };
+		655378A81CE14C17009D5A6B /* small-calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "small-calendar.png"; sourceTree = "<group>"; };
+		655378AF1CE15F27009D5A6B /* ExtensionUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionUIButton.swift; sourceTree = "<group>"; };
+		655378B31CE1AB34009D5A6B /* beer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beer.png; sourceTree = "<group>"; };
+		655378B81CE1AB9D009D5A6B /* BASKETBALL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BASKETBALL@3x.png"; sourceTree = "<group>"; };
+		655378BC1CE1AD1B009D5A6B /* BURGER@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BURGER@1x.png"; sourceTree = "<group>"; };
+		655378BD1CE1AD1B009D5A6B /* BURGER@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BURGER@2x.png"; sourceTree = "<group>"; };
+		655378BE1CE1AD1B009D5A6B /* BURGER@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BURGER@3x.png"; sourceTree = "<group>"; };
+		655378C21CE1BC68009D5A6B /* HEART.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HEART.png; sourceTree = "<group>"; };
+		655378C41CE1BC72009D5A6B /* HEART@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HEART@2x.png"; sourceTree = "<group>"; };
+		655378C51CE1BC72009D5A6B /* HEART@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HEART@3x.png"; sourceTree = "<group>"; };
+		655378CA1CE1C16C009D5A6B /* shopping-cart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shopping-cart.png"; sourceTree = "<group>"; };
+		655378CC1CE1C242009D5A6B /* man-working-on-a-laptop-from-side-view.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man-working-on-a-laptop-from-side-view.png"; sourceTree = "<group>"; };
+		658BB8501CE10A0600F65DB4 /* LoginFBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginFBViewController.swift; sourceTree = "<group>"; };
+		658BB8521CE10A7800F65DB4 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		700DFB19CA1413D17530EBEE /* Pods-Whats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whats.release.xcconfig"; path = "Pods/Target Support Files/Pods-Whats/Pods-Whats.release.xcconfig"; sourceTree = "<group>"; };
+		9CBF72FD95833FD6F3808F27 /* Pods-Whats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whats.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Whats/Pods-Whats.debug.xcconfig"; sourceTree = "<group>"; };
+		A771C90A842387F9A3B7EE3C /* libPods-Whats.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Whats.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B330B714FF4576A465274950 /* libPods-Whats.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +117,8 @@
 				6529B9ED1CD885BB007D3466 /* WhatsTests */,
 				6529B9F81CD885BB007D3466 /* WhatsUITests */,
 				6529B9D41CD885BA007D3466 /* Products */,
+				8C8EDF8B29D5807A72FC002B /* Pods */,
+				A6CF649A1A97A4F94729B75E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +135,14 @@
 		6529B9D51CD885BA007D3466 /* Whats */ = {
 			isa = PBXGroup;
 			children = (
-				6529B9D61CD885BB007D3466 /* AppDelegate.swift */,
-				6529B9D81CD885BB007D3466 /* ViewController.swift */,
-				6529B9DA1CD885BB007D3466 /* Main.storyboard */,
-				6529B9E01CD885BB007D3466 /* Assets.xcassets */,
+				655378AE1CE15F16009D5A6B /* Extension */,
 				6529B9E21CD885BB007D3466 /* LaunchScreen.storyboard */,
-				6529B9E51CD885BB007D3466 /* Info.plist */,
-				6529B9DD1CD885BB007D3466 /* Whats.xcdatamodeld */,
+				6529B9DA1CD885BB007D3466 /* Main.storyboard */,
+				655378A01CE12A26009D5A6B /* MainNavigationViewController.swift */,
+				658BB8501CE10A0600F65DB4 /* LoginFBViewController.swift */,
+				655378A21CE12CB7009D5A6B /* AccueilViewController.swift */,
+				6529B9E01CD885BB007D3466 /* Assets.xcassets */,
+				655378A41CE12CC6009D5A6B /* Supporting Files */,
 			);
 			path = Whats;
 			sourceTree = "<group>";
@@ -128,6 +165,61 @@
 			path = WhatsUITests;
 			sourceTree = "<group>";
 		};
+		655378A41CE12CC6009D5A6B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				655378A51CE1465B009D5A6B /* Image */,
+				6529B9E51CD885BB007D3466 /* Info.plist */,
+				6529B9DD1CD885BB007D3466 /* Whats.xcdatamodeld */,
+				658BB8521CE10A7800F65DB4 /* Bridging-Header.h */,
+				6529B9D61CD885BB007D3466 /* AppDelegate.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		655378A51CE1465B009D5A6B /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				655378CC1CE1C242009D5A6B /* man-working-on-a-laptop-from-side-view.png */,
+				655378CA1CE1C16C009D5A6B /* shopping-cart.png */,
+				655378C41CE1BC72009D5A6B /* HEART@2x.png */,
+				655378C51CE1BC72009D5A6B /* HEART@3x.png */,
+				655378C21CE1BC68009D5A6B /* HEART.png */,
+				655378BC1CE1AD1B009D5A6B /* BURGER@1x.png */,
+				655378BD1CE1AD1B009D5A6B /* BURGER@2x.png */,
+				655378BE1CE1AD1B009D5A6B /* BURGER@3x.png */,
+				655378B81CE1AB9D009D5A6B /* BASKETBALL@3x.png */,
+				655378B31CE1AB34009D5A6B /* beer.png */,
+				655378A81CE14C17009D5A6B /* small-calendar.png */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		655378AE1CE15F16009D5A6B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				655378AF1CE15F27009D5A6B /* ExtensionUIButton.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		8C8EDF8B29D5807A72FC002B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9CBF72FD95833FD6F3808F27 /* Pods-Whats.debug.xcconfig */,
+				700DFB19CA1413D17530EBEE /* Pods-Whats.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A6CF649A1A97A4F94729B75E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A771C90A842387F9A3B7EE3C /* libPods-Whats.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6529B9FE1CD885BB007D3466 /* Build configuration list for PBXNativeTarget "Whats" */;
 			buildPhases = (
+				425997C4E63058A048C53161 /* Check Pods Manifest.lock */,
 				6529B9CF1CD885BA007D3466 /* Sources */,
 				6529B9D01CD885BA007D3466 /* Frameworks */,
 				6529B9D11CD885BA007D3466 /* Resources */,
+				E51C905107AB9553DFEDCF87 /* Embed Pods Frameworks */,
+				FFDB7FB86828F6264FC1789A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,9 +327,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				655378C31CE1BC68009D5A6B /* HEART.png in Resources */,
+				655378BF1CE1AD1B009D5A6B /* BURGER@1x.png in Resources */,
+				655378C01CE1AD1B009D5A6B /* BURGER@2x.png in Resources */,
+				655378C11CE1AD1B009D5A6B /* BURGER@3x.png in Resources */,
 				6529B9E41CD885BB007D3466 /* LaunchScreen.storyboard in Resources */,
+				655378C61CE1BC72009D5A6B /* HEART@2x.png in Resources */,
+				655378B41CE1AB34009D5A6B /* beer.png in Resources */,
+				655378BB1CE1AB9D009D5A6B /* BASKETBALL@3x.png in Resources */,
+				655378A91CE14C17009D5A6B /* small-calendar.png in Resources */,
 				6529B9E11CD885BB007D3466 /* Assets.xcassets in Resources */,
+				655378C71CE1BC72009D5A6B /* HEART@3x.png in Resources */,
 				6529B9DC1CD885BB007D3466 /* Main.storyboard in Resources */,
+				655378CB1CE1C16C009D5A6B /* shopping-cart.png in Resources */,
+				655378CD1CE1C242009D5A6B /* man-working-on-a-laptop-from-side-view.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +360,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		425997C4E63058A048C53161 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E51C905107AB9553DFEDCF87 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Whats/Pods-Whats-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFDB7FB86828F6264FC1789A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Whats/Pods-Whats-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6529B9CF1CD885BA007D3466 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6529B9D91CD885BB007D3466 /* ViewController.swift in Sources */,
+				655378A31CE12CB7009D5A6B /* AccueilViewController.swift in Sources */,
 				6529B9DF1CD885BB007D3466 /* Whats.xcdatamodeld in Sources */,
+				655378A11CE12A26009D5A6B /* MainNavigationViewController.swift in Sources */,
 				6529B9D71CD885BB007D3466 /* AppDelegate.swift in Sources */,
+				658BB8511CE10A0600F65DB4 /* LoginFBViewController.swift in Sources */,
+				655378B01CE15F27009D5A6B /* ExtensionUIButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,23 +558,27 @@
 		};
 		6529B9FF1CD885BB007D3466 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CBF72FD95833FD6F3808F27 /* Pods-Whats.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Whats/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.Whats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Whats/Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		6529BA001CD885BB007D3466 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 700DFB19CA1413D17530EBEE /* Pods-Whats.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Whats/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.Whats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Whats/Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -486,6 +647,7 @@
 				6529BA001CD885BB007D3466 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6529BA011CD885BB007D3466 /* Build configuration list for PBXNativeTarget "WhatsTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +656,7 @@
 				6529BA031CD885BB007D3466 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6529BA041CD885BB007D3466 /* Build configuration list for PBXNativeTarget "WhatsUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +665,7 @@
 				6529BA061CD885BB007D3466 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
