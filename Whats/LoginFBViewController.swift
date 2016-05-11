@@ -23,8 +23,6 @@ class LoginFBViewController: UIViewController, FBSDKLoginButtonDelegate {
         print("User Logged In")
     }
     
-    
-    
     /* Facebook */
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
         if ((FBSDKAccessToken.currentAccessToken()) != nil){
