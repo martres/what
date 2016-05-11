@@ -11,7 +11,7 @@ import UIKit
 class GiveActionViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet var _tableView: UITableView!
-    let _theme: Theme! = nil
+    var _theme: Theme! = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()

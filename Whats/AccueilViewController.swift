@@ -17,18 +17,18 @@ class AccueilViewController: UIViewController {
     @IBOutlet var fiveSectionBtn: UIButton!
     @IBOutlet var sixSectionBtn: UIButton!
     
-    var _firstDescription : [String]!
-    var _firstEmoji : [String]!
-    var _secondDescription : [String]!
-    var _secondEmoji : [String]!
-    var _thirdDescription : [String]!
-    var _thirdEmoji : [String]!
-    var _fourDescription : [String]!
-    var _fourEmoji : [String]!
-    var _fiveDescription : [String]!
-    var _fiveEmoji : [String]!
-    var _sixDescription : [String]!
-    var _sixEmoji : [String]!
+    var _firstDescription : [String] = []
+    var _firstEmoji : [String]  = []
+    var _secondDescription : [String] = []
+    var _secondEmoji : [String]  = []
+    var _thirdDescription : [String]  = []
+    var _thirdEmoji : [String] = []
+    var _fourDescription : [String] = []
+    var _fourEmoji : [String] = []
+    var _fiveDescription : [String] = []
+    var _fiveEmoji : [String] = []
+    var _sixDescription : [String] = []
+    var _sixEmoji : [String] = []
     var _ThemeSelected : Theme! = nil
     
     override func viewDidLoad() {
@@ -116,25 +116,45 @@ class AccueilViewController: UIViewController {
     @IBAction func ThemeFunnyAction(sender: UIButton) {
         self._ThemeSelected = nil
         self._ThemeSelected = Theme(color: COLOR_FUNNY, emoji: self._firstEmoji, description: self._firstDescription, pictureName: "beer")
+        self.performSegueWithIdentifier("PushToAction", sender: self)
     }
     
     @IBAction func ThemeSportAction(sender: UIButton) {
         self._ThemeSelected = nil
         self._ThemeSelected = Theme(color: COLOR_SPORT, emoji: self._secondEmoji, description: self._secondDescription, pictureName: "basketball")
+        self.performSegueWithIdentifier("PushToAction", sender: self)
     }
     
     @IBAction func ThemeFoodAction(sender: UIButton) {
         self._ThemeSelected = nil
         self._ThemeSelected = Theme(color: COLOR_FOOD, emoji: self._thirdEmoji, description: self._thirdDescription, pictureName: "burger")
+        self.performSegueWithIdentifier("PushToAction", sender: self)
     }
     
     @IBAction func ThemeLoveAction(sender: UIButton) {
+        self._ThemeSelected = nil
+        self._ThemeSelected = Theme(color: COLOR_LOVE, emoji: self._fourEmoji, description: self._fourDescription, pictureName: "heart")
+        self.performSegueWithIdentifier("PushToAction", sender: self)
+        
     }
     
     @IBAction func ThemeShoppingAction(sender: UIButton) {
+        self._ThemeSelected = nil
+        self._ThemeSelected = Theme(color: COLOR_SHOPPING, emoji: self._fiveEmoji, description: self._fiveDescription, pictureName: "shopping")
+        self.performSegueWithIdentifier("PushToAction", sender: self)
     }
     
     @IBAction func ThemeWorkingAction(sender: UIButton) {
+        self._ThemeSelected = nil
+        self._ThemeSelected = Theme(color: COLOR_WORKING, emoji: self._sixEmoji, description: self._sixDescription, pictureName: "working")
+        self.performSegueWithIdentifier("PushToAction", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "PushToAction" {
+            let vc : GiveActionViewController = segue.destinationViewController as! GiveActionViewController
+            vc._theme = self._ThemeSelected
+        }
     }
     
     
