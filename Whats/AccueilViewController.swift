@@ -71,7 +71,7 @@ class AccueilViewController: UIViewController {
         /*Love Theme */
         self._fourDescription.append("Can I kiss you ?")
         self._fourEmoji.append("👄")
-        self._firstDescription.append("Do you want to go the restaurant with me ?")
+        self._fourDescription.append("Do you want to go the restaurant with me ?")
         self._fourEmoji.append("🍽")
         self._fourDescription.append("Do you want to sleep at my place ?")
         self._fourEmoji.append("🙈")

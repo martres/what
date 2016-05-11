@@ -19,9 +19,9 @@ class GiveActionViewController: UIViewController, UITableViewDelegate, UITableVi
         self._tableView.dataSource = self
         self.automaticallyAdjustsScrollViewInsets = false
         self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
-        self.setImageNavigationBar("beer")
-        self.setColorNavBar(COLOR_FOOD)
-        self.setColorSeparator(COLOR_FOOD)
+        self.setImageNavigationBar(self._theme._pictureName)
+        self.setColorNavBar(self._theme._color)
+        self.setColorSeparator(self._theme._color)
     }
     
     func setImageNavigationBar(name : String)
@@ -48,7 +48,7 @@ class GiveActionViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return self._theme._emoji.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -58,8 +58,9 @@ class GiveActionViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func configureCell(cell: cellAction, forRowAtIndexPath: NSIndexPath) {
-        cell._emojiAction.text = "❤️"
-        cell._titleAction.text = "test title cocuou"
+        cell._emojiAction.text = self._theme._emoji[forRowAtIndexPath.row]
+        cell._titleAction.text = self._theme._description[forRowAtIndexPath.row]
+        cell._space.backgroundColor = self._theme._color
     }
     
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -78,4 +79,5 @@ class cellAction : UITableViewCell
 {
     @IBOutlet var _titleAction: UILabel!
     @IBOutlet var _emojiAction: UILabel!
+    @IBOutlet var _space: UILabel!
 }

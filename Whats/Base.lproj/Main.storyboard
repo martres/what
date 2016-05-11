@@ -255,7 +255,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="hle-Ag-6RZ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="hle-Ag-6RZ">
                                 <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -263,15 +263,15 @@
                                         <rect key="frame" x="0.0" y="65" width="414" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IpJ-0b-mBg" id="zcL-pb-uUz">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="79.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Testttt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M38-O4-ZMB">
-                                                    <rect key="frame" x="98" y="4" width="276" height="72"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Testttt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M38-O4-ZMB">
+                                                    <rect key="frame" x="98" y="4" width="276" height="68"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="Bve-Ec-wBR"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                     <variation key="default">
@@ -290,13 +290,26 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UWy-M6-TBH">
+                                                    <rect key="frame" x="38" y="69" width="338" height="2"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="2" id="q38-4i-tAJ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="M38-O4-ZMB" firstAttribute="height" secondItem="MN2-Qj-ujl" secondAttribute="height" id="9u6-5B-OOc"/>
+                                                <constraint firstItem="UWy-M6-TBH" firstAttribute="leading" secondItem="zcL-pb-uUz" secondAttribute="leadingMargin" constant="30" id="7TI-r4-X8q"/>
+                                                <constraint firstItem="M38-O4-ZMB" firstAttribute="height" secondItem="MN2-Qj-ujl" secondAttribute="height" constant="-4" id="9u6-5B-OOc"/>
                                                 <constraint firstItem="MN2-Qj-ujl" firstAttribute="leading" secondItem="zcL-pb-uUz" secondAttribute="leadingMargin" id="B9U-tm-H3A"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="M38-O4-ZMB" secondAttribute="trailing" constant="32" id="Lgu-Kx-H5x"/>
-                                                <constraint firstItem="M38-O4-ZMB" firstAttribute="centerY" secondItem="zcL-pb-uUz" secondAttribute="centerY" id="MFF-Ek-vhQ"/>
+                                                <constraint firstItem="M38-O4-ZMB" firstAttribute="centerY" secondItem="zcL-pb-uUz" secondAttribute="centerY" constant="-1.75" id="MFF-Ek-vhQ"/>
                                                 <constraint firstItem="M38-O4-ZMB" firstAttribute="top" secondItem="MN2-Qj-ujl" secondAttribute="bottom" constant="-47" id="NKh-3J-fBQ"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="UWy-M6-TBH" secondAttribute="trailing" constant="30" id="Ywj-WA-ect"/>
+                                                <constraint firstItem="UWy-M6-TBH" firstAttribute="centerX" secondItem="zcL-pb-uUz" secondAttribute="centerX" id="bec-KZ-482"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="UWy-M6-TBH" secondAttribute="bottom" constant="1" id="d4F-SF-lx6"/>
                                                 <constraint firstItem="M38-O4-ZMB" firstAttribute="leading" secondItem="MN2-Qj-ujl" secondAttribute="trailing" constant="15" id="sc5-Mj-Hsz"/>
                                                 <constraint firstItem="MN2-Qj-ujl" firstAttribute="top" secondItem="zcL-pb-uUz" secondAttribute="top" id="z5L-iN-tvr"/>
                                             </constraints>
@@ -308,6 +321,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="_emojiAction" destination="MN2-Qj-ujl" id="XAY-lf-Noa"/>
+                                            <outlet property="_space" destination="UWy-M6-TBH" id="WOr-TY-1ik"/>
                                             <outlet property="_titleAction" destination="M38-O4-ZMB" id="Tq1-PT-GTx"/>
                                         </connections>
                                     </tableViewCell>
