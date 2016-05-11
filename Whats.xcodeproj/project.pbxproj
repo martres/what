@@ -34,6 +34,7 @@
 		655378D51CE27B82009D5A6B /* ExtensionUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655378D41CE27B82009D5A6B /* ExtensionUIColor.swift */; };
 		655378D71CE2928F009D5A6B /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655378D61CE2928F009D5A6B /* Theme.swift */; };
 		658BB8511CE10A0600F65DB4 /* LoginFBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658BB8501CE10A0600F65DB4 /* LoginFBViewController.swift */; };
+		65DF8AC31CE2ED4300896BBF /* EditEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DF8AC21CE2ED4300896BBF /* EditEventViewController.swift */; };
 		B330B714FF4576A465274950 /* libPods-Whats.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A771C90A842387F9A3B7EE3C /* libPods-Whats.a */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +90,7 @@
 		655378D61CE2928F009D5A6B /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		658BB8501CE10A0600F65DB4 /* LoginFBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginFBViewController.swift; sourceTree = "<group>"; };
 		658BB8521CE10A7800F65DB4 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		65DF8AC21CE2ED4300896BBF /* EditEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditEventViewController.swift; sourceTree = "<group>"; };
 		700DFB19CA1413D17530EBEE /* Pods-Whats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whats.release.xcconfig"; path = "Pods/Target Support Files/Pods-Whats/Pods-Whats.release.xcconfig"; sourceTree = "<group>"; };
 		9CBF72FD95833FD6F3808F27 /* Pods-Whats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whats.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Whats/Pods-Whats.debug.xcconfig"; sourceTree = "<group>"; };
 		A771C90A842387F9A3B7EE3C /* libPods-Whats.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Whats.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,16 +147,12 @@
 		6529B9D51CD885BA007D3466 /* Whats */ = {
 			isa = PBXGroup;
 			children = (
-				655378AE1CE15F16009D5A6B /* Extension */,
-				6529B9E21CD885BB007D3466 /* LaunchScreen.storyboard */,
-				655378D61CE2928F009D5A6B /* Theme.swift */,
-				655378D01CE25B8A009D5A6B /* Event.swift */,
-				6529B9DA1CD885BB007D3466 /* Main.storyboard */,
-				655378CE1CE1C7DE009D5A6B /* GiveActionViewController.swift */,
-				655378A01CE12A26009D5A6B /* MainNavigationViewController.swift */,
-				658BB8501CE10A0600F65DB4 /* LoginFBViewController.swift */,
-				655378A21CE12CB7009D5A6B /* AccueilViewController.swift */,
+				65DF8AC51CE2EDC500896BBF /* Storyboard */,
+				65DF8AC41CE2EDBA00896BBF /* DataClass */,
+				65DF8AC61CE2EDD300896BBF /* CreateEvent */,
+				65DF8AC71CE2EDEC00896BBF /* Starter */,
 				655378D21CE27AC7009D5A6B /* Macro.swift */,
+				655378AE1CE15F16009D5A6B /* Extension */,
 				6529B9E01CD885BB007D3466 /* Assets.xcassets */,
 				655378A41CE12CC6009D5A6B /* Supporting Files */,
 			);
@@ -216,6 +214,43 @@
 				655378D41CE27B82009D5A6B /* ExtensionUIColor.swift */,
 			);
 			name = Extension;
+			sourceTree = "<group>";
+		};
+		65DF8AC41CE2EDBA00896BBF /* DataClass */ = {
+			isa = PBXGroup;
+			children = (
+				655378D61CE2928F009D5A6B /* Theme.swift */,
+				655378D01CE25B8A009D5A6B /* Event.swift */,
+			);
+			name = DataClass;
+			sourceTree = "<group>";
+		};
+		65DF8AC51CE2EDC500896BBF /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				6529B9DA1CD885BB007D3466 /* Main.storyboard */,
+				6529B9E21CD885BB007D3466 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		65DF8AC61CE2EDD300896BBF /* CreateEvent */ = {
+			isa = PBXGroup;
+			children = (
+				65DF8AC21CE2ED4300896BBF /* EditEventViewController.swift */,
+				655378CE1CE1C7DE009D5A6B /* GiveActionViewController.swift */,
+			);
+			name = CreateEvent;
+			sourceTree = "<group>";
+		};
+		65DF8AC71CE2EDEC00896BBF /* Starter */ = {
+			isa = PBXGroup;
+			children = (
+				655378A21CE12CB7009D5A6B /* AccueilViewController.swift */,
+				658BB8501CE10A0600F65DB4 /* LoginFBViewController.swift */,
+				655378A01CE12A26009D5A6B /* MainNavigationViewController.swift */,
+			);
+			name = Starter;
 			sourceTree = "<group>";
 		};
 		8C8EDF8B29D5807A72FC002B /* Pods */ = {
@@ -431,6 +466,7 @@
 				655378D11CE25B8A009D5A6B /* Event.swift in Sources */,
 				655378A31CE12CB7009D5A6B /* AccueilViewController.swift in Sources */,
 				6529B9DF1CD885BB007D3466 /* Whats.xcdatamodeld in Sources */,
+				65DF8AC31CE2ED4300896BBF /* EditEventViewController.swift in Sources */,
 				655378D51CE27B82009D5A6B /* ExtensionUIColor.swift in Sources */,
 				655378D71CE2928F009D5A6B /* Theme.swift in Sources */,
 				655378A11CE12A26009D5A6B /* MainNavigationViewController.swift in Sources */,

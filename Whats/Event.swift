@@ -11,17 +11,17 @@ import CoreData
 
 class Event {
     
-    let _theme : String!
     let _action : String!
     let _emoji : String!
     let _date : NSDate!
+    let _color : UIColor!
     
-    init(theme : String, action : String, emoji : String, date : NSDate)
+    init(action : String, emoji : String, date : NSDate = NSDate(), color : UIColor)
     {
         self._action = action
-        self._theme = theme
         self._emoji = emoji
         self._date = date
+        self._color = color
     }
     
 }

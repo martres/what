@@ -12,6 +12,8 @@ class GiveActionViewController: UIViewController, UITableViewDelegate, UITableVi
 
     @IBOutlet var _tableView: UITableView!
     var _theme: Theme! = nil
+    var _emojiSelected : String!
+    var _descriptionSelected : String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,6 +60,7 @@ class GiveActionViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func configureCell(cell: cellAction, forRowAtIndexPath: NSIndexPath) {
+        cell.selectionStyle = .None
         cell._emojiAction.text = self._theme._emoji[forRowAtIndexPath.row]
         cell._titleAction.text = self._theme._description[forRowAtIndexPath.row]
         cell._space.backgroundColor = self._theme._color
@@ -72,6 +75,19 @@ class GiveActionViewController: UIViewController, UITableViewDelegate, UITableVi
         return nil
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let cellSelected : cellAction = tableView.cellForRowAtIndexPath(indexPath) as! cellAction
+        self._emojiSelected = cellSelected._emojiAction.text
+        self._descriptionSelected = cellSelected._titleAction.text
+        self.performSegueWithIdentifier("segueEditEvent", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "segueEditEvent" {
+            let vc : EditEventViewController = segue.destinationViewController as! EditEventViewController
+            vc._event = Event(action: self._descriptionSelected, emoji: self._emojiSelected, color: self._theme._color)
+        }
+    }
     
 }
 

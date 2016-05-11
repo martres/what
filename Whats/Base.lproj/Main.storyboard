@@ -67,7 +67,9 @@
                         <color key="backgroundColor" red="0.0" green="0.88235294117647056" blue="0.80392156862745101" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="barTintColor" red="0.0" green="0.88235294119999996" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="0.0" green="0.88235294119999996" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>
@@ -255,7 +257,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="hle-Ag-6RZ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="80" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="hle-Ag-6RZ">
                                 <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -351,11 +353,46 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="_tableView" destination="hle-Ag-6RZ" id="d6p-23-x1o"/>
+                        <segue destination="Lkg-u7-EaM" kind="show" identifier="segueEditEvent" id="Emx-ev-mVX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YqL-qi-RsH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="800" y="1750"/>
+        </scene>
+        <!--Edit Event View Controller-->
+        <scene sceneID="iyd-DW-zgf">
+            <objects>
+                <viewController id="Lkg-u7-EaM" customClass="EditEventViewController" customModule="Whats" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s0e-FP-aLZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="w9u-tD-Hzd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rBy-au-6Gs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DkZ-nz-q8s">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DkZ-nz-q8s" firstAttribute="height" secondItem="rBy-au-6Gs" secondAttribute="height" id="1fQ-WH-Yhf"/>
+                            <constraint firstItem="DkZ-nz-q8s" firstAttribute="width" secondItem="rBy-au-6Gs" secondAttribute="width" id="HCf-Hd-pHm"/>
+                            <constraint firstItem="DkZ-nz-q8s" firstAttribute="centerY" secondItem="rBy-au-6Gs" secondAttribute="centerY" id="hxC-g0-QeN"/>
+                            <constraint firstItem="DkZ-nz-q8s" firstAttribute="centerX" secondItem="rBy-au-6Gs" secondAttribute="centerX" id="qC2-vY-7CJ"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="_viewback" destination="DkZ-nz-q8s" id="Fad-Dl-8fj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YvK-iG-FC2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1276" y="1750"/>
         </scene>
     </scenes>
     <resources>
