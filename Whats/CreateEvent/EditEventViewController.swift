@@ -98,6 +98,8 @@ class EditEventViewController: UIViewController {
         DatePickerDialog().show(self._event._adress, doneButtonTitle: "Done", cancelButtonTitle: "Cancel", datePickerMode: .DateAndTime, color : self._event._color) {
             (date) -> Void in
             self._locationManager.stopUpdatingLocation()
+            self._event._date = date.toString("HH:mm MM-dd-yyyy")
+            self.performSegueWithIdentifier("showListContact", sender: self)
         }
     }
     
@@ -106,6 +108,13 @@ class EditEventViewController: UIViewController {
             self.getMyLocation()
         } else {
             self.showDatePicker()
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showListContact" {
+            let vc : ListContactViewController = segue.destinationViewController as! ListContactViewController
+            vc._event = self._event
         }
     }
 }
