@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreData
+import MapKit
 
 class Event {
     
@@ -15,6 +16,8 @@ class Event {
     let _emoji : String!
     let _date : NSDate!
     let _color : UIColor!
+    var _adress : String! = ""
+    var _location : CLLocationCoordinate2D = CLLocationCoordinate2D()
     
     init(action : String, emoji : String, date : NSDate = NSDate(), color : UIColor)
     {

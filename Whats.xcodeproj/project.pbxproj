@@ -35,6 +35,14 @@
 		655378D71CE2928F009D5A6B /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655378D61CE2928F009D5A6B /* Theme.swift */; };
 		658BB8511CE10A0600F65DB4 /* LoginFBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658BB8501CE10A0600F65DB4 /* LoginFBViewController.swift */; };
 		65DF8AC31CE2ED4300896BBF /* EditEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DF8AC21CE2ED4300896BBF /* EditEventViewController.swift */; };
+		65DF8ACC1CE3B8D700896BBF /* 519580-076_LocationArrow-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 65DF8AC91CE3B8D700896BBF /* 519580-076_LocationArrow-512.png */; };
+		65DF8ACD1CE3B8D700896BBF /* 519580-076_LocationArrow-512@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65DF8ACA1CE3B8D700896BBF /* 519580-076_LocationArrow-512@2x.png */; };
+		65DF8ACE1CE3B8D700896BBF /* 519580-076_LocationArrow-512@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65DF8ACB1CE3B8D700896BBF /* 519580-076_LocationArrow-512@3x.png */; };
+		65DF8AD01CE3C73C00896BBF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DF8ACF1CE3C73C00896BBF /* MapKit.framework */; };
+		65DF8AD21CE3C94D00896BBF /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DF8AD11CE3C94D00896BBF /* LocationSearchTable.swift */; };
+		65DF8AD41CE4232200896BBF /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DF8AD31CE4232200896BBF /* DatePickerDialog.swift */; };
+		65DF8AD61CE435E700896BBF /* ExtensionString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DF8AD51CE435E700896BBF /* ExtensionString.swift */; };
+		65DF8ADB1CE4501700896BBF /* ListContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DF8ADA1CE4501700896BBF /* ListContactViewController.swift */; };
 		B330B714FF4576A465274950 /* libPods-Whats.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A771C90A842387F9A3B7EE3C /* libPods-Whats.a */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +99,14 @@
 		658BB8501CE10A0600F65DB4 /* LoginFBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginFBViewController.swift; sourceTree = "<group>"; };
 		658BB8521CE10A7800F65DB4 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		65DF8AC21CE2ED4300896BBF /* EditEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditEventViewController.swift; sourceTree = "<group>"; };
+		65DF8AC91CE3B8D700896BBF /* 519580-076_LocationArrow-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "519580-076_LocationArrow-512.png"; sourceTree = "<group>"; };
+		65DF8ACA1CE3B8D700896BBF /* 519580-076_LocationArrow-512@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "519580-076_LocationArrow-512@2x.png"; sourceTree = "<group>"; };
+		65DF8ACB1CE3B8D700896BBF /* 519580-076_LocationArrow-512@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "519580-076_LocationArrow-512@3x.png"; sourceTree = "<group>"; };
+		65DF8ACF1CE3C73C00896BBF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		65DF8AD11CE3C94D00896BBF /* LocationSearchTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
+		65DF8AD31CE4232200896BBF /* DatePickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerDialog.swift; sourceTree = "<group>"; };
+		65DF8AD51CE435E700896BBF /* ExtensionString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionString.swift; sourceTree = "<group>"; };
+		65DF8ADA1CE4501700896BBF /* ListContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListContactViewController.swift; sourceTree = "<group>"; };
 		700DFB19CA1413D17530EBEE /* Pods-Whats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whats.release.xcconfig"; path = "Pods/Target Support Files/Pods-Whats/Pods-Whats.release.xcconfig"; sourceTree = "<group>"; };
 		9CBF72FD95833FD6F3808F27 /* Pods-Whats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whats.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Whats/Pods-Whats.debug.xcconfig"; sourceTree = "<group>"; };
 		A771C90A842387F9A3B7EE3C /* libPods-Whats.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Whats.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65DF8AD01CE3C73C00896BBF /* MapKit.framework in Frameworks */,
 				B330B714FF4576A465274950 /* libPods-Whats.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,11 +164,11 @@
 		6529B9D51CD885BA007D3466 /* Whats */ = {
 			isa = PBXGroup;
 			children = (
+				65DF8AD71CE44FB500896BBF /* SendEvent */,
 				65DF8AC51CE2EDC500896BBF /* Storyboard */,
 				65DF8AC41CE2EDBA00896BBF /* DataClass */,
 				65DF8AC61CE2EDD300896BBF /* CreateEvent */,
 				65DF8AC71CE2EDEC00896BBF /* Starter */,
-				655378D21CE27AC7009D5A6B /* Macro.swift */,
 				655378AE1CE15F16009D5A6B /* Extension */,
 				6529B9E01CD885BB007D3466 /* Assets.xcassets */,
 				655378A41CE12CC6009D5A6B /* Supporting Files */,
@@ -192,6 +209,7 @@
 		655378A51CE1465B009D5A6B /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				65DF8AC81CE3B8D700896BBF /* arrowMap */,
 				655378CC1CE1C242009D5A6B /* man-working-on-a-laptop-from-side-view.png */,
 				655378CA1CE1C16C009D5A6B /* shopping-cart.png */,
 				655378C41CE1BC72009D5A6B /* HEART@2x.png */,
@@ -210,8 +228,11 @@
 		655378AE1CE15F16009D5A6B /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				65DF8AD31CE4232200896BBF /* DatePickerDialog.swift */,
+				655378D21CE27AC7009D5A6B /* Macro.swift */,
 				655378AF1CE15F27009D5A6B /* ExtensionUIButton.swift */,
 				655378D41CE27B82009D5A6B /* ExtensionUIColor.swift */,
+				65DF8AD51CE435E700896BBF /* ExtensionString.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -239,6 +260,7 @@
 			children = (
 				65DF8AC21CE2ED4300896BBF /* EditEventViewController.swift */,
 				655378CE1CE1C7DE009D5A6B /* GiveActionViewController.swift */,
+				65DF8AD11CE3C94D00896BBF /* LocationSearchTable.swift */,
 			);
 			name = CreateEvent;
 			sourceTree = "<group>";
@@ -253,6 +275,24 @@
 			name = Starter;
 			sourceTree = "<group>";
 		};
+		65DF8AC81CE3B8D700896BBF /* arrowMap */ = {
+			isa = PBXGroup;
+			children = (
+				65DF8AC91CE3B8D700896BBF /* 519580-076_LocationArrow-512.png */,
+				65DF8ACA1CE3B8D700896BBF /* 519580-076_LocationArrow-512@2x.png */,
+				65DF8ACB1CE3B8D700896BBF /* 519580-076_LocationArrow-512@3x.png */,
+			);
+			path = arrowMap;
+			sourceTree = "<group>";
+		};
+		65DF8AD71CE44FB500896BBF /* SendEvent */ = {
+			isa = PBXGroup;
+			children = (
+				65DF8ADA1CE4501700896BBF /* ListContactViewController.swift */,
+			);
+			name = SendEvent;
+			sourceTree = "<group>";
+		};
 		8C8EDF8B29D5807A72FC002B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,6 +305,7 @@
 		A6CF649A1A97A4F94729B75E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				65DF8ACF1CE3C73C00896BBF /* MapKit.framework */,
 				A771C90A842387F9A3B7EE3C /* libPods-Whats.a */,
 			);
 			name = Frameworks;
@@ -341,6 +382,11 @@
 				TargetAttributes = {
 					6529B9D21CD885BA007D3466 = {
 						CreatedOnToolsVersion = 7.3;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					6529B9E91CD885BB007D3466 = {
 						CreatedOnToolsVersion = 7.3;
@@ -388,9 +434,12 @@
 				655378A91CE14C17009D5A6B /* small-calendar.png in Resources */,
 				6529B9E11CD885BB007D3466 /* Assets.xcassets in Resources */,
 				655378C71CE1BC72009D5A6B /* HEART@3x.png in Resources */,
+				65DF8ACC1CE3B8D700896BBF /* 519580-076_LocationArrow-512.png in Resources */,
 				6529B9DC1CD885BB007D3466 /* Main.storyboard in Resources */,
 				655378CB1CE1C16C009D5A6B /* shopping-cart.png in Resources */,
+				65DF8ACD1CE3B8D700896BBF /* 519580-076_LocationArrow-512@2x.png in Resources */,
 				655378CD1CE1C242009D5A6B /* man-working-on-a-laptop-from-side-view.png in Resources */,
+				65DF8ACE1CE3B8D700896BBF /* 519580-076_LocationArrow-512@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,10 +512,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65DF8AD21CE3C94D00896BBF /* LocationSearchTable.swift in Sources */,
+				65DF8ADB1CE4501700896BBF /* ListContactViewController.swift in Sources */,
 				655378D11CE25B8A009D5A6B /* Event.swift in Sources */,
 				655378A31CE12CB7009D5A6B /* AccueilViewController.swift in Sources */,
 				6529B9DF1CD885BB007D3466 /* Whats.xcdatamodeld in Sources */,
 				65DF8AC31CE2ED4300896BBF /* EditEventViewController.swift in Sources */,
+				65DF8AD61CE435E700896BBF /* ExtensionString.swift in Sources */,
+				65DF8AD41CE4232200896BBF /* DatePickerDialog.swift in Sources */,
 				655378D51CE27B82009D5A6B /* ExtensionUIColor.swift in Sources */,
 				655378D71CE2928F009D5A6B /* Theme.swift in Sources */,
 				655378A11CE12A26009D5A6B /* MainNavigationViewController.swift in Sources */,
@@ -618,6 +671,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Whats/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.Whats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -631,6 +685,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Whats/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.Whats;
 				PRODUCT_NAME = "$(TARGET_NAME)";

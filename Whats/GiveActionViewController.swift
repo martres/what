@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GiveActionViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class GiveActionViewController: UIViewController {
 
     @IBOutlet var _tableView: UITableView!
     var _theme: Theme! = nil
@@ -43,6 +43,17 @@ class GiveActionViewController: UIViewController, UITableViewDelegate, UITableVi
         self._tableView.separatorColor = color
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "segueEditEvent" {
+            let vc : EditEventViewController = segue.destinationViewController as! EditEventViewController
+            vc._event = Event(action: self._descriptionSelected, emoji: self._emojiSelected, color: self._theme._color)
+        }
+    }
+    
+}
+
+extension GiveActionViewController : UITableViewDelegate, UITableViewDataSource {
+    
     //MARK: UITableViewDataSource
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -68,7 +79,7 @@ class GiveActionViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return CGFloat.min
-
+        
     }
     
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -81,14 +92,6 @@ class GiveActionViewController: UIViewController, UITableViewDelegate, UITableVi
         self._descriptionSelected = cellSelected._titleAction.text
         self.performSegueWithIdentifier("segueEditEvent", sender: self)
     }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "segueEditEvent" {
-            let vc : EditEventViewController = segue.destinationViewController as! EditEventViewController
-            vc._event = Event(action: self._descriptionSelected, emoji: self._emojiSelected, color: self._theme._color)
-        }
-    }
-    
 }
 
 class cellAction : UITableViewCell
@@ -97,3 +100,5 @@ class cellAction : UITableViewCell
     @IBOutlet var _emojiAction: UILabel!
     @IBOutlet var _space: UILabel!
 }
+
+
