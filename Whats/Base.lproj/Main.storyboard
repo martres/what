@@ -194,11 +194,69 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="_tableView" destination="rLt-be-JNo" id="aOv-pK-0ni"/>
+                        <segue destination="KTa-if-E9a" kind="show" identifier="segueSendEventAgain" id="ieu-XW-RaQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jct-QK-ekq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-151" y="1750"/>
+        </scene>
+        <!--Send Again Event View Controller-->
+        <scene sceneID="Xd9-V4-yYz">
+            <objects>
+                <viewController id="KTa-if-E9a" customClass="SendAgainEventViewController" customModule="Whats" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zRm-RT-8ci"/>
+                        <viewControllerLayoutGuide type="bottom" id="T03-lq-GAs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wcn-6j-EjQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="n6W-Xt-C1a">
+                                <rect key="frame" x="0.0" y="64" width="414" height="368"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click on the emoji to send again your event ! " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wz0-e3-88x">
+                                <rect key="frame" x="0.0" y="452" width="414" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWd-va-3xo">
+                                <rect key="frame" x="157" y="530" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="CFH-fG-W2L"/>
+                                    <constraint firstAttribute="height" constant="100" id="S0T-w1-dD2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <state key="normal" title="😗"/>
+                                <connections>
+                                    <action selector="actionSendAgain:" destination="KTa-if-E9a" eventType="touchUpInside" id="vJU-cC-Rdq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wz0-e3-88x" firstAttribute="width" secondItem="wcn-6j-EjQ" secondAttribute="width" id="1dd-sI-5rf"/>
+                            <constraint firstItem="n6W-Xt-C1a" firstAttribute="centerX" secondItem="wcn-6j-EjQ" secondAttribute="centerX" id="5UY-p0-fXA"/>
+                            <constraint firstItem="hWd-va-3xo" firstAttribute="centerX" secondItem="wcn-6j-EjQ" secondAttribute="centerX" id="Lhw-eT-x0Z"/>
+                            <constraint firstItem="wz0-e3-88x" firstAttribute="centerX" secondItem="wcn-6j-EjQ" secondAttribute="centerX" id="OOa-y8-dLw"/>
+                            <constraint firstItem="n6W-Xt-C1a" firstAttribute="width" secondItem="wcn-6j-EjQ" secondAttribute="width" id="RZh-E5-PMy"/>
+                            <constraint firstItem="wz0-e3-88x" firstAttribute="top" secondItem="n6W-Xt-C1a" secondAttribute="bottom" constant="20" id="TRW-7e-SbF"/>
+                            <constraint firstItem="n6W-Xt-C1a" firstAttribute="top" secondItem="zRm-RT-8ci" secondAttribute="bottom" id="ZDr-zs-Z3O"/>
+                            <constraint firstItem="n6W-Xt-C1a" firstAttribute="height" secondItem="wcn-6j-EjQ" secondAttribute="height" multiplier="0.5" id="ckk-MJ-wW5"/>
+                            <constraint firstItem="hWd-va-3xo" firstAttribute="top" secondItem="wz0-e3-88x" secondAttribute="bottom" constant="60" id="lC9-0t-uXx"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="_btnEmot" destination="hWd-va-3xo" id="C7R-aJ-iaw"/>
+                        <outlet property="_mapView" destination="n6W-Xt-C1a" id="wZ3-KA-0ZQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aIi-Gu-SF7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-151" y="2546"/>
         </scene>
         <!--Accueil View Controller-->
         <scene sceneID="9mV-eO-PJ9">

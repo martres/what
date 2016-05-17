@@ -16,6 +16,7 @@
 		6529B9FA1CD885BB007D3466 /* WhatsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6529B9F91CD885BB007D3466 /* WhatsUITests.swift */; };
 		6554DB681CEA618800CF88CA /* CoreDataHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6554DB671CEA618800CF88CA /* CoreDataHelper.framework */; };
 		6554DB6A1CEA61F600CF88CA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6554DB691CEA61F600CF88CA /* CoreData.framework */; };
+		65DB3CB41CEBBA1200A1CD75 /* SendAgainEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DB3CB31CEBBA1200A1CD75 /* SendAgainEventViewController.swift */; };
 		65DF8AD01CE3C73C00896BBF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DF8ACF1CE3C73C00896BBF /* MapKit.framework */; };
 		65DF8AE71CE450EE00896BBF /* BASKETBALL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65DF8ADC1CE450EE00896BBF /* BASKETBALL@3x.png */; };
 		65DF8AE81CE450EE00896BBF /* beer.png in Resources */ = {isa = PBXBuildFile; fileRef = 65DF8ADD1CE450EE00896BBF /* beer.png */; };
@@ -87,6 +88,7 @@
 		6554DB671CEA618800CF88CA /* CoreDataHelper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreDataHelper.framework; path = "../../../Library/Developer/Xcode/DerivedData/Whats-bpdoxzhvvkjfrqbdtkbnbhnvwycj/Build/Products/Debug-iphoneos/CoreDataHelper.framework"; sourceTree = "<group>"; };
 		6554DB691CEA61F600CF88CA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		658BB8521CE10A7800F65DB4 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		65DB3CB31CEBBA1200A1CD75 /* SendAgainEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendAgainEventViewController.swift; sourceTree = "<group>"; };
 		65DF8ACF1CE3C73C00896BBF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		65DF8ADC1CE450EE00896BBF /* BASKETBALL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BASKETBALL@3x.png"; path = "Image/BASKETBALL@3x.png"; sourceTree = "<group>"; };
 		65DF8ADD1CE450EE00896BBF /* beer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beer.png; path = Image/beer.png; sourceTree = "<group>"; };
@@ -311,6 +313,7 @@
 				65DF8B161CE4526200896BBF /* LoginFBViewController.swift */,
 				65DF8B171CE4526200896BBF /* MainNavigationViewController.swift */,
 				65FB2CBD1CEACB570076AC77 /* ShowMyEventViewController.swift */,
+				65DB3CB31CEBBA1200A1CD75 /* SendAgainEventViewController.swift */,
 			);
 			path = Starter;
 			sourceTree = "<group>";
@@ -540,6 +543,7 @@
 				65DF8B011CE451D000896BBF /* ExtensionString.swift in Sources */,
 				65FB2CC21CEAD1AB0076AC77 /* EventData.swift in Sources */,
 				65DF8B001CE451D000896BBF /* DatePickerDialog.swift in Sources */,
+				65DB3CB41CEBBA1200A1CD75 /* SendAgainEventViewController.swift in Sources */,
 				65DF8B1A1CE4526200896BBF /* MainNavigationViewController.swift in Sources */,
 				65FB2CC11CEAD1AB0076AC77 /* EventData+CoreDataProperties.swift in Sources */,
 				65DF8B191CE4526200896BBF /* LoginFBViewController.swift in Sources */,

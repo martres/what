@@ -12,6 +12,7 @@ class ShowMyEventViewController: UIViewController {
 
     @IBOutlet var _tableView: UITableView!
     var _events : [EventData] = []
+    var _indexSelect : Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +46,7 @@ extension ShowMyEventViewController : UITableViewDataSource, UITableViewDelegate
     }
     
     func configureCell(cell: eventCell, forRowAtIndexPath: NSIndexPath) {
+        cell.selectionStyle = .None
         cell.action.text = self._events[forRowAtIndexPath.row].action
         cell._emoticone.text = self._events[forRowAtIndexPath.row].emoticone
         cell._space.text = ""
@@ -56,8 +58,17 @@ extension ShowMyEventViewController : UITableViewDataSource, UITableViewDelegate
     //MARK: UITableViewDelegate
     
      func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
+        self._indexSelect = indexPath.row
+        self.performSegueWithIdentifier("segueSendEventAgain", sender: self)
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "segueSendEventAgain" {
+            let vc : SendAgainEventViewController = segue.destinationViewController as! SendAgainEventViewController
+            vc._event = self._events[self._indexSelect]
+        }
+    }
+    
 }
 
 class eventCell: UITableViewCell {
