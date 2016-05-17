@@ -8,6 +8,9 @@
 
 import UIKit
 import CoreData
+import FBSDKLoginKit
+import FBSDKLoginKit
+import CoreDataHelper
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         FBSDKLoginButton.self
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        CDHelper.initializeWithMainContext(self.managedObjectContext)
         return true
     }
     

@@ -5,6 +5,8 @@ PODS:
   - Bolts/AppLinks (1.7.0):
     - Bolts/Tasks
   - Bolts/Tasks (1.7.0)
+  - CoreDataHelper (1.0.0)
+  - EPContactsPicker (1.0.2)
   - FBSDKCoreKit (4.11.0):
     - Bolts (~> 1.7)
   - FBSDKLoginKit (4.11.0):
@@ -13,12 +15,16 @@ PODS:
     - FBSDKCoreKit
 
 DEPENDENCIES:
+  - CoreDataHelper
+  - EPContactsPicker
   - FBSDKCoreKit
   - FBSDKLoginKit
   - FBSDKShareKit
 
 SPEC CHECKSUMS:
   Bolts: a0058fa3b331c5a1e4402d534f2dae36dbff31e4
+  CoreDataHelper: 54441befdbf1e9762ceb447ad5fa981cc90f77ef
+  EPContactsPicker: 38fcb880893b08df10758adb0941ea7e712b892a
   FBSDKCoreKit: 686ac982723a14ec9ddb85e2f81235d7706c891b
   FBSDKLoginKit: bade9fc78277764149ccc5bfaadbf13c83175c6a
   FBSDKShareKit: 2d1746144cfc8a9dbbd24997c34ee0471be51b6a

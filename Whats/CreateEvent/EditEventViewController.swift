@@ -77,8 +77,8 @@ class EditEventViewController: UIViewController {
             let country = (containsPlacemark.country != nil) ? containsPlacemark.country : ""
             
             self._event._adress = "\(street!) \(locality!) \(postalCode!) \n\(administrativeArea!) \(country!)"
+            self._event._location = containsPlacemark.location!
             self.showDatePicker()
-            print(self._event._adress!)
         }
         
     }

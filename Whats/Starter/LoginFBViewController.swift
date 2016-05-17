@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import FBSDKCoreKit
+import FBSDKLoginKit
 
-class LoginFBViewController: UIViewController, FBSDKLoginButtonDelegate {
+class LoginFBViewController: UIViewController{
     
     @IBOutlet var fbLoginView : FBSDKLoginButton!
 
@@ -18,6 +20,9 @@ class LoginFBViewController: UIViewController, FBSDKLoginButtonDelegate {
         self.fbLoginView.delegate = self
         self.fbLoginView.readPermissions = ["public_profile", "email", "user_friends"]
     }
+}
+
+extension LoginFBViewController : FBSDKLoginButtonDelegate{
     
     func loginViewShowingLoggedInUser(loginView : FBSDKLoginButton!) {
         print("User Logged In")

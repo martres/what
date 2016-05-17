@@ -9,7 +9,6 @@ pod 'FBSDKCoreKit'
 pod 'FBSDKShareKit'
 pod 'FBSDKLoginKit'
 pod 'EPContactsPicker'
-pod 'CoreDataHelper'
 
 end
 

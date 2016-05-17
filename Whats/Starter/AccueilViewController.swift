@@ -112,6 +112,9 @@ class AccueilViewController: UIViewController {
         self.navigationController?.navigationBar.barTintColor = COLOR_MAIN
     }
     
+    @IBAction func showEvent(sender: AnyObject) {
+        self.performSegueWithIdentifier("segueShowEvent", sender: self)
+    }
     
     @IBAction func ThemeFunnyAction(sender: UIButton) {
         self._ThemeSelected = nil
@@ -156,6 +159,8 @@ class AccueilViewController: UIViewController {
             vc._theme = self._ThemeSelected
         }
     }
+    
+    
     
     
     

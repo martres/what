@@ -14,6 +14,8 @@
 		6529B9E41CD885BB007D3466 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6529B9E21CD885BB007D3466 /* LaunchScreen.storyboard */; };
 		6529B9EF1CD885BB007D3466 /* WhatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6529B9EE1CD885BB007D3466 /* WhatsTests.swift */; };
 		6529B9FA1CD885BB007D3466 /* WhatsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6529B9F91CD885BB007D3466 /* WhatsUITests.swift */; };
+		6554DB681CEA618800CF88CA /* CoreDataHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6554DB671CEA618800CF88CA /* CoreDataHelper.framework */; };
+		6554DB6A1CEA61F600CF88CA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6554DB691CEA61F600CF88CA /* CoreData.framework */; };
 		65DF8AD01CE3C73C00896BBF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DF8ACF1CE3C73C00896BBF /* MapKit.framework */; };
 		65DF8AE71CE450EE00896BBF /* BASKETBALL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65DF8ADC1CE450EE00896BBF /* BASKETBALL@3x.png */; };
 		65DF8AE81CE450EE00896BBF /* beer.png in Resources */ = {isa = PBXBuildFile; fileRef = 65DF8ADD1CE450EE00896BBF /* beer.png */; };
@@ -45,7 +47,10 @@
 		65DF8B1A1CE4526200896BBF /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DF8B171CE4526200896BBF /* MainNavigationViewController.swift */; };
 		65DF8B1C1CE4536400896BBF /* ExtensionDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DF8B1B1CE4536400896BBF /* ExtensionDate.swift */; };
 		65DF8B1E1CE454A000896BBF /* ExtensionUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DF8B1D1CE454A000896BBF /* ExtensionUIViewController.swift */; };
-		B330B714FF4576A465274950 /* libPods-Whats.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A771C90A842387F9A3B7EE3C /* libPods-Whats.a */; };
+		65FB2CBE1CEACB570076AC77 /* ShowMyEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FB2CBD1CEACB570076AC77 /* ShowMyEventViewController.swift */; };
+		65FB2CC11CEAD1AB0076AC77 /* EventData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FB2CBF1CEAD1AB0076AC77 /* EventData+CoreDataProperties.swift */; };
+		65FB2CC21CEAD1AB0076AC77 /* EventData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FB2CC01CEAD1AB0076AC77 /* EventData.swift */; };
+		81AF7DD1CCD75322D5849D40 /* Pods_Whats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3B40BE7ED1B044FE527791 /* Pods_Whats.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +84,8 @@
 		6529B9F51CD885BB007D3466 /* WhatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6529B9F91CD885BB007D3466 /* WhatsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsUITests.swift; sourceTree = "<group>"; };
 		6529B9FB1CD885BB007D3466 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6554DB671CEA618800CF88CA /* CoreDataHelper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreDataHelper.framework; path = "../../../Library/Developer/Xcode/DerivedData/Whats-bpdoxzhvvkjfrqbdtkbnbhnvwycj/Build/Products/Debug-iphoneos/CoreDataHelper.framework"; sourceTree = "<group>"; };
+		6554DB691CEA61F600CF88CA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		658BB8521CE10A7800F65DB4 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		65DF8ACF1CE3C73C00896BBF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		65DF8ADC1CE450EE00896BBF /* BASKETBALL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BASKETBALL@3x.png"; path = "Image/BASKETBALL@3x.png"; sourceTree = "<group>"; };
@@ -111,9 +118,12 @@
 		65DF8B171CE4526200896BBF /* MainNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
 		65DF8B1B1CE4536400896BBF /* ExtensionDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDate.swift; sourceTree = "<group>"; };
 		65DF8B1D1CE454A000896BBF /* ExtensionUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionUIViewController.swift; sourceTree = "<group>"; };
+		65FB2CBD1CEACB570076AC77 /* ShowMyEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowMyEventViewController.swift; sourceTree = "<group>"; };
+		65FB2CBF1CEAD1AB0076AC77 /* EventData+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EventData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		65FB2CC01CEAD1AB0076AC77 /* EventData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventData.swift; sourceTree = "<group>"; };
+		6F3B40BE7ED1B044FE527791 /* Pods_Whats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Whats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		700DFB19CA1413D17530EBEE /* Pods-Whats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whats.release.xcconfig"; path = "Pods/Target Support Files/Pods-Whats/Pods-Whats.release.xcconfig"; sourceTree = "<group>"; };
 		9CBF72FD95833FD6F3808F27 /* Pods-Whats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whats.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Whats/Pods-Whats.debug.xcconfig"; sourceTree = "<group>"; };
-		A771C90A842387F9A3B7EE3C /* libPods-Whats.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Whats.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,8 +131,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6554DB6A1CEA61F600CF88CA /* CoreData.framework in Frameworks */,
+				6554DB681CEA618800CF88CA /* CoreDataHelper.framework in Frameworks */,
 				65DF8AD01CE3C73C00896BBF /* MapKit.framework in Frameworks */,
-				B330B714FF4576A465274950 /* libPods-Whats.a in Frameworks */,
+				81AF7DD1CCD75322D5849D40 /* Pods_Whats.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +290,8 @@
 			children = (
 				65DF8B0D1CE4525100896BBF /* Event.swift */,
 				65DF8B0E1CE4525100896BBF /* Theme.swift */,
+				65FB2CBF1CEAD1AB0076AC77 /* EventData+CoreDataProperties.swift */,
+				65FB2CC01CEAD1AB0076AC77 /* EventData.swift */,
 			);
 			path = DataClass;
 			sourceTree = "<group>";
@@ -296,6 +310,7 @@
 				65DF8B151CE4526200896BBF /* AccueilViewController.swift */,
 				65DF8B161CE4526200896BBF /* LoginFBViewController.swift */,
 				65DF8B171CE4526200896BBF /* MainNavigationViewController.swift */,
+				65FB2CBD1CEACB570076AC77 /* ShowMyEventViewController.swift */,
 			);
 			path = Starter;
 			sourceTree = "<group>";
@@ -312,8 +327,10 @@
 		A6CF649A1A97A4F94729B75E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6554DB691CEA61F600CF88CA /* CoreData.framework */,
+				6554DB671CEA618800CF88CA /* CoreDataHelper.framework */,
 				65DF8ACF1CE3C73C00896BBF /* MapKit.framework */,
-				A771C90A842387F9A3B7EE3C /* libPods-Whats.a */,
+				6F3B40BE7ED1B044FE527791 /* Pods_Whats.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -521,14 +538,17 @@
 			files = (
 				6529B9DF1CD885BB007D3466 /* Whats.xcdatamodeld in Sources */,
 				65DF8B011CE451D000896BBF /* ExtensionString.swift in Sources */,
+				65FB2CC21CEAD1AB0076AC77 /* EventData.swift in Sources */,
 				65DF8B001CE451D000896BBF /* DatePickerDialog.swift in Sources */,
 				65DF8B1A1CE4526200896BBF /* MainNavigationViewController.swift in Sources */,
+				65FB2CC11CEAD1AB0076AC77 /* EventData+CoreDataProperties.swift in Sources */,
 				65DF8B191CE4526200896BBF /* LoginFBViewController.swift in Sources */,
 				65DF8B041CE451D000896BBF /* Macro.swift in Sources */,
 				65DF8B0F1CE4525100896BBF /* Event.swift in Sources */,
 				65DF8B101CE4525100896BBF /* Theme.swift in Sources */,
 				65DF8B131CE4525C00896BBF /* ListContactViewController.swift in Sources */,
 				65DF8B091CE4524A00896BBF /* EditEventViewController.swift in Sources */,
+				65FB2CBE1CEACB570076AC77 /* ShowMyEventViewController.swift in Sources */,
 				65DF8B181CE4526200896BBF /* AccueilViewController.swift in Sources */,
 				65DF8B1C1CE4536400896BBF /* ExtensionDate.swift in Sources */,
 				65DF8B1E1CE454A000896BBF /* ExtensionUIViewController.swift in Sources */,

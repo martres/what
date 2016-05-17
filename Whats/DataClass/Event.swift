@@ -17,7 +17,7 @@ class Event {
     var _date : String! = ""
     let _color : UIColor!
     var _adress : String! = ""
-    var _location : CLLocationCoordinate2D = CLLocationCoordinate2D()
+    var _location : CLLocation = CLLocation()
     
     init(action : String, emoji : String, color : UIColor)
     {
